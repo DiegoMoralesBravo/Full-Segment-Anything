@@ -1,3 +1,4 @@
-print('Funciona!')
-print('Funciona!')
-print('Funciona!')
+def testChido():
+    print('Funciona!')
+    print('Funciona!')
+    print('Funciona!')
