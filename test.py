@@ -1,5 +1,4 @@
-""" Example 1: All mask generation """
-# basic module
+import os
 import numpy as np
 from PIL import Image
 from mask_generator import SamMaskGenerator
@@ -12,7 +11,7 @@ def testChido():
     sam = sam_model_registry['vit_b'](checkpoint='sam_vit_h_4b8939.pth').cuda()
     auto_to_mask = SamMaskGenerator(sam, stability_score_thresh=0.8)
 
-    # image upload
-    img = np.array(Image.open("figure/paris2.jpg"))
-    masks = auto_to_mask.generate(img)
-    return 'checar'
+    # # image upload
+    # img = np.array(Image.open("figure/paris2.jpg"))
+    # masks = auto_to_mask.generate(img)
+    return os.listdir(os.getcwd())
