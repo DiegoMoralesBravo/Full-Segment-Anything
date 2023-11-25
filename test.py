@@ -7,9 +7,9 @@ from utils.utils import show_masks
 from build_sam import sam_model_registry
 
 def testChido():
-
-    sam = sam_model_registry['vit_b'](checkpoint='sam_vit_h_4b8939.pth').cuda()
-    auto_to_mask = SamMaskGenerator(sam, stability_score_thresh=0.8)
+    print('hola')
+    # sam = sam_model_registry['vit_b'](checkpoint='sam_vit_h_4b8939.pth').cpu()
+    # auto_to_mask = SamMaskGenerator(sam, stability_score_thresh=0.8)
 
     # # image upload
     # img = np.array(Image.open("figure/paris2.jpg"))
