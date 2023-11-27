@@ -9,7 +9,6 @@ from build_sam import sam_model_registry
 def testChido():
     print(os.listdir('/var/data'))
 
-    sam = sam_model_registry['vit_b'](checkpoint='/var/data/sam_vit_b_01ec64.pth').cpu()
 
     # auto_to_mask = SamMaskGenerator(sam, stability_score_thresh=0.8)
 
