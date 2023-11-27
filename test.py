@@ -16,4 +16,4 @@ def testChido():
     # # image upload
     # img = np.array(Image.open("figure/paris2.jpg"))
     # masks = auto_to_mask.generate(img)
-    return 'checar'
+    return os.listdir(os.getcwd())
